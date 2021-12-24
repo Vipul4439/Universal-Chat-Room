@@ -1,0 +1,15 @@
+{
+  "name": "universal-chat",
+  "version": "1.0.0",
+  "description": "A Universal Chat room where multiple users can chat",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.4.0"
+  }
+}
