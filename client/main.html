@@ -8,6 +8,41 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Universal Chat Room</title>
+    <link rel="stylesheet" href="./CSS/file.css" />
+    <script
+      defer
+      src="http://localhost:3000/socket.io/socket.io.js"
+    ></script>
+
+    <script defer src="./Javascript/file.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div id="name-container">
+      <input
+        type="text"
+        autocomplete="false"
+        name="hidden"
+        placeholder="Enter your name"
+        id="username-tag"
+      />
+      <button id="buttonid" onclick="takeinputfuction()">
+        Enter
+      </button>
+    </div>
+
+    <div class="main-container">
+      <div class="defaultclass">Welcome to Universal Chat System</div>
+    </div>
+    <div class="send">
+      <form action="#" id="form-send">
+        <input
+          placeholder="Enter your message"
+          type="text"
+          name="textinp"
+          id="textinp"
+        />
+        <button type="submit" class="btnclass">Send</button>
+      </form>
+    </div>
+  </body>
 </html>
