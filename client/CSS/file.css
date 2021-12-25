@@ -1,0 +1,90 @@
+body {
+  background-color: #f0ece3;
+}
+
+.main-container {
+  max-width: 950px;
+  background-color: #dfd3c3;
+  margin: auto;
+  box-shadow: 0px 0px 10px;
+  height: 60vh;
+  margin-top: 50px;
+  padding: 33px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  background-color: #a68dad;
+  width: 24%;
+  padding: 10px;
+  margin: 17px 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+#form-send {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 1050px;
+  width: 100%;
+}
+
+#textinp {
+  width: 91%;
+  border: 2px solid yellow;
+  border-radius: 6px;
+  height: 34px;
+  font-size: large;
+
+  outline: none;
+}
+
+.btnclass {
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 6px;
+  height: 35px;
+}
+
+#name-container {
+  margin: auto;
+
+  text-align: center;
+}
+
+#username-tag {
+  width: 10%;
+  height: 25px;
+}
+
+#buttonid {
+  height: 30px;
+  width: 5%;
+  color: crimson;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.defaultclass {
+  width: 300px;
+  height: 30px;
+
+  margin: 0;
+  text-align: center;
+  color: crimson;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
