@@ -1,10 +1,39 @@
-const socket = io("http://localhost:3000");
+const socket = io("https://chat-application-bac.herokuapp.com");
 
 const form = document.getElementById("form-send");
 const textinput = document.getElementById("textinp");
 const mainmsgcontainer = document.querySelector(".main-container");
 
 var ring = new Audio("rigntone.mp3");
+
+function colorchange() {
+  var x = document.getElementById("nametoggle");
+  if (x.innerHTML === "Light Mode") {
+    x.innerHTML = "Dark Mode";
+  } else {
+    x.innerHTML = "Light Mode";
+  }
+
+  var element = document.body;
+  var extra = document.getElementById("extra");
+  var main = document.querySelector(".main-container");
+  var warning = document.querySelector(".defaultclass");
+  var warningDate = document.getElementById("date");
+  var inputBox = document.getElementById("textinp");
+  var sendBtn = document.querySelector(".btnclass");
+  var introductionInput = document.getElementById("username-tag");
+  var introductionButton = document.getElementById("buttonid");
+
+  element.classList.toggle("dark-mode");
+  extra.classList.toggle("blue-mode");
+  main.classList.toggle("inner-body");
+  warning.classList.toggle("warning-heading");
+  warningDate.classList.toggle("warning-date");
+  inputBox.classList.toggle("input-box-color");
+  sendBtn.classList.toggle("send-btn");
+  introductionInput.classList.toggle("introduction-input");
+  introductionButton.classList.toggle("introduction-button");
+}
 
 function takeinputfuction() {
   var inputtag = document.getElementById("username-tag");
@@ -33,7 +62,7 @@ form.addEventListener("submit", (e) => {
   textinput.value = "";
 });
 
-socket.on("left", (name) => {
+socket.on("leftthechat", (name) => {
   itemAppend(`${name} left the chat`, "left");
 });
 

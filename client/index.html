@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="./CSS/file.css" />
     <script
       defer
-      src="http://localhost:3000/socket.io/socket.io.js"
+      src="https://chat-application-bac.herokuapp.com/socket.io/socket.io.js"
     ></script>
 
     <script defer src="./Javascript/file.js"></script>
   </head>
   <body>
+    <!-- <marquee behavior="scroll" direction="left" width="1000px"
+      >Please Enter your Name first before you chat and Share the URL
+      of the Website with your friends whom you want to chat!</marquee
+    > -->
+    <h3 id="extra" class="main-heading">
+      Please enter your name first before you start chat and share the
+      URL of the website with your friends whom you want to chat!
+    </h3>
     <div id="name-container">
       <input
         type="text"
@@ -24,14 +32,29 @@
         name="hidden"
         placeholder="Enter your name"
         id="username-tag"
+        autofocus
       />
       <button id="buttonid" onclick="takeinputfuction()">
         Enter
       </button>
+
+      <button
+        id="nametoggle"
+        class="changeTheme"
+        onclick="colorchange()"
+      >
+        Dark Mode
+      </button>
     </div>
 
     <div class="main-container">
-      <div class="defaultclass">Welcome to Universal Chat System</div>
+      <div id="date">Today</div>
+      <div class="defaultclass">
+        Messages are end-to-end encrypted. No one outside of this
+        chat, not even Universal Chat System, can read to them.
+        <br />
+        Tap to learn more.
+      </div>
     </div>
     <div class="send">
       <form action="#" id="form-send">
@@ -40,6 +63,7 @@
           type="text"
           name="textinp"
           id="textinp"
+          autofocus
         />
         <button type="submit" class="btnclass">Send</button>
       </form>
