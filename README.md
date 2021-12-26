@@ -6,6 +6,10 @@ Universal Chat Room is an application which allows you to chat with multiple use
 
 ##Note : After the application is opened the user first needs to enter his/her name and register with the application to avoid conflicts. 
 
+##Application link :
+https://universal-chat.netlify.app 
+
+
 ## Build With
 
 - HTML5
