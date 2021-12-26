@@ -4,9 +4,9 @@
 
 Universal Chat Room is an application which allows you to chat with multiple users at a same time and it is also equipped with Light and Dark theme as per convenience of the user.
 
-##Note : After the application is opened the user first needs to enter his/her name and register with the application to avoid conflicts. 
+#Note : After the application is opened the user first needs to enter his/her name and register with the application to avoid conflicts. 
 
-##Application link :
+#Application link :
 https://universal-chat.netlify.app 
 
 
